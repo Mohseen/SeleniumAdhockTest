@@ -12,11 +12,11 @@ public class SeleniumScript {
     Actions actions;
     @BeforeTest
     public void beforeTest(){
-        //System.setProperty("webdriver.gecko.driver", "/Users/mali4/Documents/GitRepo/SeleniumAdhockTest/src/main/resources/drivers/geckodriver");
-        //driver = new FirefoxDriver();
+        System.setProperty("webdriver.gecko.driver", "/Users/mali4/Documents/GitRepo/SeleniumAdhockTest/src/main/resources/drivers/geckodriver");
+        driver = new FirefoxDriver();
 
-        System.setProperty("webdriver.chrome.driver", "/Users/mali4/Documents/GitRepo/SeleniumAdhockTest/src/main/resources/drivers/chromedriver 3");
-        driver = new ChromeDriver();
+//        System.setProperty("webdriver.chrome.driver", "/Users/mali4/Documents/GitRepo/SeleniumAdhockTest/src/main/resources/drivers/chromedriver 3");
+//        driver = new ChromeDriver();
         driver.get("https://jqueryui.com/droppable/");
         driver.manage().window().maximize();
     }
