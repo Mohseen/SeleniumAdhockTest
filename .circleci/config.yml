@@ -25,8 +25,8 @@ jobs: # we now have TWO jobs, so that a workflow can coordinate them!
     docker:
       - image: circleci/openjdk:17.0.3
         auth:
-          username: mydockerhub-user
-          password: $DOCKERHUB_PASSWORD
+          username: mohseendocker
+          password: Mohseen@docker1
     steps:
       - checkout
       - run: echo "A opendjdk message"
