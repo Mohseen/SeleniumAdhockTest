@@ -23,7 +23,7 @@ jobs: # we now have TWO jobs, so that a workflow can coordinate them!
       - run: sleep 15 # and then sleep for 15 seconds.
   three:
     docker:
-      - image: circleci/openjdk:17.0.3
+      - image: cimg/openjdk:17.0.3
         auth:
           username: mohseendocker
           password: Mohseen@docker1
