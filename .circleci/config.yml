@@ -24,13 +24,13 @@ jobs: # we now have TWO jobs, so that a workflow can coordinate them!
   three:
     docker:
       - image: circleci/openjdk:17.0.3
-      auth:
-        username: mydockerhub-user
-        password: $DOCKERHUB_PASSWORD
+        auth:
+          username: mydockerhub-user
+          password: $DOCKERHUB_PASSWORD
     steps:
       - checkout
       - run: echo "A opendjdk message"
-      - run: sleep 25
+      - run: sleep 15
 # Under the workflows: map, we can coordinate our two jobs, defined above.
 workflows:
   version: 2
